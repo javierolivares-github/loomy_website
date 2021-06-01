@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotos sobre ovejas, lanas y diseños para tejer | Loomy.com</title>
+  <meta name="keywords" content="ovejas, lana, diseños en lana, palillos, tintes, lana afieltrada, campo, ponchos, agujas">
+  <meta name="description" content="Acá encontrarás una colección de fotografías de nuestras ovejitas, nuestras lanas, nuestros diseños y nuestros cursos.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script>
+    // Toggle function
+    $(function(){
+      $(".menu__togg").on("click", function(){
+        if($(".menu__item").hasClass("active")){
+          $(".menu__item").removeClass("active");
+        } else{
+          $(".menu__item").addClass("active");
+        }
+      })
+    });
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nave">
+    <div class="wrapper">
+      <ul class="menu">
+        <li class="menu__logo">
+          <a href="index.html">
+            <img class="logo__img" src="./img/logo.svg" alt="logo">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link" href="index.html">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link" href="gallery.html">Fotos</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link" href="video.html">Videos</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link"href="material.html">Recursos</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link"href="contact.html">Contacto</a>
+        </li>
+        <li class="menu__togg">
+          <a href="#">
+            <i class="togg__icon fas fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Gallery Imgs Section -->
+  <section id="imageGallery" class="container imageGallery">
+    <!-- Gallery Imgs Title -->
+    <h1 class="imageGallery__title">Fotos</h1>
+
+    <!-- Gallery Imgs Collection -->
+    <div class="imageGallery__collection">
+        <img src="./img/imgs1080x720/1.JPG" alt="imagen 1 ovejita" class="collection__item">
+        <img src="./img/imgs1080x720/2.JPG" alt="imagen 2 telar" class="collection__item">
+        <img src="./img/imgs1080x720/3.JPG" alt="imagen 3 telar 2" class="collection__item">
+        <img src="./img/imgs1080x720/4.JPG" alt="imagen 4 tejido" class="collection__item">
+        <img src="./img/imgs1080x720/5.JPG" alt="imagen 5 oveja y yorshi" class="collection__item">
+        <img src="./img/imgs1080x720/6.JPG" alt="imagen 6 tintes" class="collection__item">
+        <img src="./img/imgs1080x720/7.JPG" alt="imagen 7 ovejas" class="collection__item">
+        <img src="./img/imgs1080x720/8.JPG" alt="imagen 8 cojin" class="collection__item">
+        <img src="./img/imgs1080x720/9.JPG" alt="imagen 9 lanas de colores" class="collection__item">
+        <img src="./img/imgs1080x720/10.JPG" alt="imagen 10 oveja pastando" class="collection__item">
+        <img src="./img/imgs1080x720/11.JPG" alt="imagen 11 oveja posando" class="collection__item">
+        <img src="./img/imgs1080x720/12.JPG" alt="imagen 12 ovejas pastando" class="collection__item">
+        <img src="./img/imgs1080x720/13.JPG" alt="imagen 13 oveja posando 2" class="collection__item">
+        <img src="./img/imgs1080x720/14.JPG" alt="imagen 14 lanas de colores 2" class="collection__item">
+        <img src="./img/imgs1080x720/15.JPG" alt="imagen 15 oveja acostada" class="collection__item">
+        <img src="./img/imgs1080x720/16.JPG" alt="imagen 16 oveja pastando" class="collection__item">
+        <img src="./img/imgs1080x720/17.JPG" alt="imagen 17 modelo varon con poncho" class="collection__item">
+        <img src="./img/imgs1080x720/18.JPG" alt="imagen 18 diseño tejido" class="collection__item">
+    </div>
+  </section>
+
+  <!-- Advertising -->
+  <section id="ad" class="mt-45 container">
+    <!-- Banner -->
+    <div class="banner banner--imgOverlay">
+      <!-- Banner icon left -->
+      <div class="banner__iconLeft"><i class="fas fa-gift fa-3x"></i></div>
+      <!-- Banner title -->
+      <h2 class="banner__title">Mini Curso de Regalo.</h2>
+      <!-- Banner copy -->
+      <div class="banner__copy">
+        <h3>Disfruta de momentos de paz y tranquilidad en la comodidad de tu hogar. Escribe tu email en el espacio a continuación y obtén gratis el Mini Curso de Tejido de Silvana. &nbsp; 
+          <i class="fas fa-gift"></i>
+        </h3>
+        <form>
+          <input type="email" placeholder="Escribe tu email aquí">
+          <input type="submit" value="Quiero mi mini curso" class="btn btn--callToAction">
+        </form>
+      </div>
+      <!-- Banner icon right-->
+      <div class="banner__iconRight"><i class="fas fa-gift fa-3x"></i></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="mt-45 footer">
+    <div class="container">
+      <div class="footer__nav">
+        <div class="footer__logo">
+          <img class="logo__img" src="./img/logo.svg" alt="logo">
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__menu--a">
+            <li><a href="./index.html">Blog</a></li>
+            <li><a href="./gallery.html">Fotos</a></li>
+            <li><a href="./video.html">Videos</a></li>
+          </ul>
+          <ul class="footer__menu--b">
+            <li><a href="./material.html">Recursos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./mapadesitio.html">Mapa de sitio</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__paragraph">Loomy - Todos los derechos reservados &copy; 2021</p>
+    </div>
+  </footer>
+
+</body>
+</html>

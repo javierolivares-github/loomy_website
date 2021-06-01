@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos, estaremos felices de responderte. | Loomy.com</title>
+  <meta name="keywords" content="contacto, formulario de contacto, consultar por lana, cursos de tejido, cursos lana afieltrada, información sobre loomy">
+  <meta name="description" content="Puedes escribirnos a través del formulario de contacto dentro de esta página.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script>
+    // Toggle function
+    $(function(){
+      $(".menu__togg").on("click", function(){
+        if($(".menu__item").hasClass("active")){
+          $(".menu__item").removeClass("active");
+        } else{
+          $(".menu__item").addClass("active");
+        }
+      })
+    });
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nave">
+    <div class="wrapper">
+      <ul class="menu">
+        <li class="menu__logo">
+          <a href="index.html">
+            <img class="logo__img" src="./img/logo.svg" alt="logo">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link" href="index.html">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link" href="gallery.html">Fotos</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link" href="video.html">Videos</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link"href="material.html">Recursos</a>
+        </li>
+        <li class="menu__item">
+          <a class="item__link"href="contact.html">Contacto</a>
+        </li>
+        <li class="menu__togg">
+          <a href="#">
+            <i class="togg__icon fas fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container contact">
+    <!-- Title -->
+    <h1 class="contact__title">Contacto</h1>
+    <!-- Form -->
+    <div>
+      <form class="contact__form">
+        <label for="name">Nombre (requerido)</label>
+        <input type="text" id="name">
+        <label for="email">Correo (requerido)</label>
+        <input type="email" name="email" id="email">
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <label for="country">¿Desde dónde nos escribes?</label>
+        <select name="country" id="country">
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="peru">Perú</option>
+          <option value="uruguay">Uruguay</option>
+        </select>
+        <div class="checkbox">
+          <input type="checkbox" name="suscribe" id="suscribe">
+          <label for="suscribe">Suscribirse al blog para recibir novedades</label>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" class="btn btn--primary">
+          <!-- <input type="reset" value="Limpiar" class="btn btn--secondary"> -->
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ADVERTISING -->
+  <section id="ad" class="mt-45 container">
+    <!-- Banner -->
+    <div class="banner banner--imgOverlay">
+      <!-- Banner icon left -->
+      <div class="banner__iconLeft"><i class="fas fa-gift fa-3x"></i></div>
+      <!-- Banner title -->
+      <h2 class="banner__title">Mini Curso de Regalo.</h2>
+      <!-- Banner copy -->
+      <div class="banner__copy">
+        <h3>Disfruta de momentos de paz y tranquilidad en la comodidad de tu hogar. Escribe tu email en el espacio a continuación y obtén gratis el Mini Curso de Tejido de Silvana. &nbsp; 
+          <i class="fas fa-gift"></i>
+        </h3>
+        <form>
+          <input type="email" placeholder="Escribe tu email aquí">
+          <input type="submit" value="Quiero mi mini curso" class="btn--callToAction">
+        </form>
+      </div>
+      <!-- Banner icon right-->
+      <div class="banner__iconRight"><i class="fas fa-gift fa-3x"></i></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="mt-45 footer">
+    <div class="container">
+      <div class="footer__nav">
+        <div class="footer__logo">
+          <img class="logo__img" src="./img/logo.svg" alt="logo">
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__menu--a">
+            <li><a href="./index.html">Blog</a></li>
+            <li><a href="./gallery.html">Fotos</a></li>
+            <li><a href="./video.html">Videos</a></li>
+          </ul>
+          <ul class="footer__menu--b">
+            <li><a href="./material.html">Recursos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./mapadesitio.html">Mapa de sitio</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__paragraph">Loomy - Todos los derechos reservados &copy; 2021</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
