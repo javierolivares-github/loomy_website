@@ -40,8 +40,8 @@ $ctaHover: #ff6b81;
 
 html, body {
   font-family: 'Lato', sans-serif;
-  @include font(18px, 300);
-  line-height: 1.4;
+  @include font(16px, 300);
+  line-height: 1.5;
   background-color: #f7f7f7;
   color: #1D1D1B;
   text-rendering: optimizeLegibility;
@@ -51,7 +51,7 @@ html, body {
 /* Reutilizables */
 .container {
   max-width: 1020px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -137,7 +137,7 @@ html, body {
 
   .wrapper {
     max-width: 1020px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: auto;
 
     .menu {
@@ -187,7 +187,7 @@ html, body {
         }
     
         .togg__icon {
-          font-size: 26px;
+          font-size: 22px;
         }
       }
     }  
@@ -200,36 +200,37 @@ html, body {
   flex-direction: column;
 
   .article__title {
-    @include font (2rem, 700);
-    margin: 0 0 15px 0;
+    @include font (1.875rem, 700);
+    line-height: 1.125;
+    margin: 0 0 20px 0;
   }
   
-  .article__content {
-    display: flex;
-    flex-direction: column;
+  .article__imgContainer {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
 
-    .col1 {
-      flex: 100%;
+    .article__img {
       width: 100%;
-
-      .article__img {
-        width: 100%;
-        outline: 1px solid #1d1d1b;
-      }
-
-      .article__badge {
-        font-size: 0.7rem;
-      }
+      // outline: 1px solid #1d1d1b;
     }
-    
-    .col2 {
-      flex: 100%;
-      width: 100%;
+  }
 
-      .article__paragraph {
-        margin: 0 0 15px 0;
-      }
+  .article__badgeContainer {
+    margin: 0 0 20px 0;
+
+    .article__badge {
+      font-size: 0.75rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
     }
+  }
+
+  .article__paragraph {
+    font-weight: 400;
+    color: #3f3f3d;
+    margin: 0 0 25px 0;
   }
 }
 
@@ -362,7 +363,7 @@ html, body {
 /* Footer Component SmartPhone*/
 .footer {
   @include color (#333, #fff);
-  padding: 15px 20px;
+  padding: 15px 0;
 
   .footer__nav {
     display: flex;
@@ -391,7 +392,7 @@ html, body {
         text-decoration: none;
         cursor: pointer;
         color: #fff;
-        @include font (0.9rem, 700);
+        @include font (0.875rem, 700);
       }
     }
   }
@@ -401,7 +402,7 @@ html, body {
   }
   .footer__paragraph {
     margin: 0;
-    @include font (0.7rem, 700);
+    @include font (0.875rem, 700);
     text-align: center;
   }
 }
