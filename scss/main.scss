@@ -210,10 +210,10 @@ html, body {
     height: 190px;
     overflow: hidden;
     margin: 0 0 10px 0;
+    outline: 1px solid #1d1d1b;
 
     .article__img {
       width: 100%;
-      // outline: 1px solid #1d1d1b;
     }
   }
 
@@ -698,6 +698,19 @@ html, body {
 // TABLET
 /* Tablet Mobile First------------------------------------------- */
 @media all and (min-width: 468px) {
+  /* Navbar Component Tablet*/
+.nave {
+  .wrapper {
+    padding: 0 30px;
+    .menu {
+      .menu__item {
+        .item__link {
+          font-size: 0.938rem; 
+        }
+      }
+    }  
+  }
+}
   // POST Component Tablet
   .post {
     .post__hero {
