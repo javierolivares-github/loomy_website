@@ -40,7 +40,7 @@ $ctaHover: #ff6b81;
 
 html, body {
   font-family: 'Lato', sans-serif;
-  @include font(16px, 300);
+  @include font(16px, 400);
   line-height: 1.5;
   background-color: #f7f7f7;
   color: #1D1D1B;
@@ -50,10 +50,9 @@ html, body {
 
 /* Reutilizables */
 .container {
-  max-width: 1020px;
+  max-width: 1140px;
   padding: 0 20px;
   margin: auto;
-
 }
 
 @media all and (min-width: 468px) {
@@ -61,6 +60,13 @@ html, body {
     padding: 0 30px;
   }
 }
+
+@media all and (min-width: 769px) {
+  .container {
+    padding: 0;
+  }
+}
+
 .mt-05 {
   margin-top: 5px;
 }
@@ -93,7 +99,7 @@ html, body {
   display: inline-block;
   padding: 10px 20px;
   font-family: 'Roboto', sans-serif;
-  @include font (12px, 700);
+  @include font (14px, 700);
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
@@ -204,6 +210,7 @@ html, body {
 .article {
   display: flex;
   flex-direction: column;
+  margin: 45px 0 0 0;
 
   .article__title {
     @include font (1.875rem, 700);
@@ -238,6 +245,10 @@ html, body {
     color: #3f3f3d;
     margin: 0 0 25px 0;
   }
+}
+
+.sidebar {
+  display: none;
 }
 
 /* Pagination Component SmartPhone*/
@@ -717,6 +728,11 @@ html, body {
     grid-column-gap: 38px;
     justify-content: space-between;
   }
+
+  .sidebar {
+    display: none;
+  }
+
   // POST Component Tablet
   .post {
     .post__hero {
@@ -1011,9 +1027,11 @@ html, body {
 @media all and (min-width: 769px) {
   // NAVBAR Component Laptop
   .nave {
+    padding: 15px 0;
+
     .wrapper {
-      max-width: 1020px;
-      padding: 0 10px;
+      max-width: 1140px;
+      padding: 0;
       margin: auto;
   
       .menu {
@@ -1031,8 +1049,7 @@ html, body {
           flex: 1;
 
           .logo__img {
-            @include sizes (70px, 70px);
-            margin: 8px 0 0 0;
+            @include sizes (80px, 80px);
           }
         }
   
@@ -1040,23 +1057,27 @@ html, body {
           order: 1;
           width: auto;
           display: block;
-          font-size: 0.9rem;
-          padding: 12px 20px;
+          font-size: 1.125rem;
+          padding: 12px 19px;
   
           &.active {
             display: block;
           }
-    
+
           .item__link {
             display: block;
             color: #1d1d1b;
-            @include font (0.9rem, 700);
+            @include font (1.125rem, 700);
             text-decoration: none;
           }
     
           .item__link:hover {
             color:$primary;
           }
+        }
+
+        .menu__item.last {
+          padding: 12px 0 12px 19px;
         }
   
         .menu__togg{
@@ -1076,35 +1097,101 @@ html, body {
     }
   }
   
-  /* ARTICLE Component Laptop*/
-  .article {
-   .article__content {
-      display: flex;
-      flex-direction: row;
+  /* BLOG AND ARTICLE Component Laptop*/
+  .blog {
+    grid-column-gap: 68px;
+  }
 
-      .col1 {
-        flex: 50%;
-        width: 50%;
+  .sidebar {
+    display: flex;
+    padding: 45px 0;
+    margin: 45px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    background-color: rgba(22, 160, 133, 0.15);
 
-        .article__img {
-          @include sizes (432px, 288px);
-          outline: 1px solid #1d1d1b;
-        }
+    .biography__photo {
+      width: 257px;
+      height: 384px;
+      overflow: hidden;
+      margin: 0;
 
-        .article__badge {
-          font-size: 0.7rem;
-        }
+      .biography__img {
+        width: 100%;
       }
-    
-      .col2 {
-        flex: 50%;
-        width: 50%;
+    }
 
-        .article__paragraph {
-          margin: 0 0 15px 0;
+    .biography__paragraph {
+      width: 257px;
+      margin: 20px 0 0 0;
+      color: #3f3f3d;
+      
+      p {
+        margin: 0;
+      }
+    }
+
+    .news {
+      width: 257px;
+      margin: 45px 0 0 0;
+
+      .news__title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1.125;
+          margin: 0;
+      }
+
+      .news__list {
+        margin: 20px 0 0 0;
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 10px 0 0 0;
+
+          a {
+            text-decoration: none;
+            color: #3f3f3d;
+          }
         }
       }
     }
+
+    .category {
+      width: 257px;
+      margin: 45px 0 0 0;
+
+      .category__title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1.125;
+          margin: 0;
+      }
+
+      .category__list {
+        margin: 20px 0 0 0;
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 10px 0 0 0;
+
+          a {
+            text-decoration: none;
+            color: #3f3f3d;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto 335px;
+    justify-content: space-between;
   }
 
   /* BANNER Component Laptop*/

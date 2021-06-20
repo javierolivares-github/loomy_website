@@ -14,7 +14,7 @@
 html, body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   background-color: #f7f7f7;
   color: #1D1D1B;
@@ -22,13 +22,17 @@ html, body {
 
 /* Reutilizables */
 .container {
-  max-width: 1020px;
+  max-width: 1140px;
   padding: 0 20px;
   margin: auto; }
 
 @media all and (min-width: 468px) {
   .container {
     padding: 0 30px; } }
+
+@media all and (min-width: 769px) {
+  .container {
+    padding: 0; } }
 
 .mt-05 {
   margin-top: 5px; }
@@ -55,7 +59,7 @@ html, body {
   display: inline-block;
   padding: 10px 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -155,7 +159,8 @@ html, body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin: 45px 0 0 0; }
   .article .article__title {
     font-size: 1.875rem;
     font-weight: 700;
@@ -179,6 +184,9 @@ html, body {
     font-weight: 400;
     color: #3f3f3d;
     margin: 0 0 25px 0; }
+
+.sidebar {
+  display: none; }
 
 /* Pagination Component SmartPhone*/
 .pagination {
@@ -632,6 +640,8 @@ html, body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .sidebar {
+    display: none; }
   .post .post__hero {
     position: relative;
     margin: 0 0 40px 0; }
@@ -911,95 +921,147 @@ html, body {
 
 /* LAPTOP */
 @media all and (min-width: 769px) {
-  .nave .wrapper {
-    max-width: 1020px;
-    padding: 0 10px;
-    margin: auto; }
-    .nave .wrapper .menu {
-      list-style-type: none;
-      margin: 0 !important;
-      padding: 0 !important;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
-      .nave .wrapper .menu .menu__logo {
-        -webkit-box-ordinal-group: 1;
-            -ms-flex-order: 0;
-                order: 0;
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1; }
-        .nave .wrapper .menu .menu__logo .logo__img {
-          width: 70px;
-          height: 70px;
-          margin: 8px 0 0 0; }
-      .nave .wrapper .menu .menu__item {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
-        width: auto;
-        display: block;
-        font-size: 0.9rem;
-        padding: 12px 20px; }
-        .nave .wrapper .menu .menu__item.active {
-          display: block; }
-        .nave .wrapper .menu .menu__item .item__link {
+  .nave {
+    padding: 15px 0; }
+    .nave .wrapper {
+      max-width: 1140px;
+      padding: 0;
+      margin: auto; }
+      .nave .wrapper .menu {
+        list-style-type: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        .nave .wrapper .menu .menu__logo {
+          -webkit-box-ordinal-group: 1;
+              -ms-flex-order: 0;
+                  order: 0;
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          .nave .wrapper .menu .menu__logo .logo__img {
+            width: 80px;
+            height: 80px; }
+        .nave .wrapper .menu .menu__item {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1;
+          width: auto;
           display: block;
-          color: #1d1d1b;
-          font-size: 0.9rem;
-          font-weight: 700;
-          text-decoration: none; }
-        .nave .wrapper .menu .menu__item .item__link:hover {
-          color: #16a085; }
-      .nave .wrapper .menu .menu__togg {
-        display: none;
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
-        .nave .wrapper .menu .menu__togg a {
-          cursor: pointer;
-          color: #1d1d1b; }
-        .nave .wrapper .menu .menu__togg .togg__icon {
-          font-size: 26px; }
-  /* ARTICLE Component Laptop*/
-  .article .article__content {
+          font-size: 1.125rem;
+          padding: 12px 19px; }
+          .nave .wrapper .menu .menu__item.active {
+            display: block; }
+          .nave .wrapper .menu .menu__item .item__link {
+            display: block;
+            color: #1d1d1b;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-decoration: none; }
+          .nave .wrapper .menu .menu__item .item__link:hover {
+            color: #16a085; }
+        .nave .wrapper .menu .menu__item.last {
+          padding: 12px 0 12px 19px; }
+        .nave .wrapper .menu .menu__togg {
+          display: none;
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          .nave .wrapper .menu .menu__togg a {
+            cursor: pointer;
+            color: #1d1d1b; }
+          .nave .wrapper .menu .menu__togg .togg__icon {
+            font-size: 26px; }
+  /* BLOG AND ARTICLE Component Laptop*/
+  .blog {
+    grid-column-gap: 68px; }
+  .sidebar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    padding: 45px 0;
+    margin: 45px 0 0 0;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .article .article__content .col1 {
-      -webkit-box-flex: 50%;
-          -ms-flex: 50%;
-              flex: 50%;
-      width: 50%; }
-      .article .article__content .col1 .article__img {
-        width: 432px;
-        height: 288px;
-        outline: 1px solid #1d1d1b; }
-      .article .article__content .col1 .article__badge {
-        font-size: 0.7rem; }
-    .article .article__content .col2 {
-      -webkit-box-flex: 50%;
-          -ms-flex: 50%;
-              flex: 50%;
-      width: 50%; }
-      .article .article__content .col2 .article__paragraph {
-        margin: 0 0 15px 0; }
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 335px;
+    background-color: rgba(22, 160, 133, 0.15); }
+    .sidebar .biography__photo {
+      width: 257px;
+      height: 384px;
+      overflow: hidden;
+      margin: 0; }
+      .sidebar .biography__photo .biography__img {
+        width: 100%; }
+    .sidebar .biography__paragraph {
+      width: 257px;
+      margin: 20px 0 0 0;
+      color: #3f3f3d; }
+      .sidebar .biography__paragraph p {
+        margin: 0; }
+    .sidebar .news {
+      width: 257px;
+      margin: 45px 0 0 0; }
+      .sidebar .news .news__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.125;
+        margin: 0; }
+      .sidebar .news .news__list {
+        margin: 20px 0 0 0;
+        list-style: none;
+        padding: 0; }
+        .sidebar .news .news__list li {
+          margin: 10px 0 0 0; }
+          .sidebar .news .news__list li a {
+            text-decoration: none;
+            color: #3f3f3d; }
+    .sidebar .category {
+      width: 257px;
+      margin: 45px 0 0 0; }
+      .sidebar .category .category__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.125;
+        margin: 0; }
+      .sidebar .category .category__list {
+        margin: 20px 0 0 0;
+        list-style: none;
+        padding: 0; }
+        .sidebar .category .category__list li {
+          margin: 10px 0 0 0; }
+          .sidebar .category .category__list li a {
+            text-decoration: none;
+            color: #3f3f3d; }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 335px;
+        grid-template-columns: auto 335px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   /* BANNER Component Laptop*/
   .banner {
     gap: 50px; }
