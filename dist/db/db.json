@@ -3,32 +3,40 @@
     "id": 1, 
     "title": "¿Cómo teñir lana de forma super orgánica?", 
     "img": "./img/imgs1080x720/6.jpg",
-    "time": "#5 min lectura",
+    "read_time": "#5 min lectura",
     "author": "#Silvana Vitali",
+    "date": "01/07/2021",
+    "category": "Tejidos",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor..."
   },
   {
     "id": 2, 
     "title": "7 Cosas que debes saber sobre las ovejitas.", 
     "img": "./img/imgs1080x720/7.jpg",
-    "time": "#3 min lectura",
+    "read_time": "#3 min lectura",
     "author": "#Silvana Vitali",
+    "date": "15/06/2021",
+    "category": "Crianza",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor..."
   },
   {
     "id": 3, 
     "title": "5 Tips para que tus ovejitas estén felices.", 
     "img": "./img/imgs1080x720/1.jpg",
-    "time": "#2 min lectura",
+    "read_time": "#2 min lectura",
     "author": "#Silvana Vitali",
+    "date": "03/06/2021",
+    "category": "Crianza",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor..."
   },
   {
     "id": 4, 
     "title": "¿Cómo combinar el color de tus lanas?", 
     "img": "./img/imgs1080x720/9.jpg",
-    "time": "#4 min lectura",
+    "read_time": "#4 min lectura",
     "author": "#Silvana Vitali",
+    "date": "28/05/2021",
+    "category": "Tejidos",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor..."
   }
 ]
