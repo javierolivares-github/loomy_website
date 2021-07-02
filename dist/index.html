@@ -88,99 +88,7 @@
 
   <section id="main" class="main container">
     <!-- BLOG AND ARTICLES-->
-    <section id="blog" class="blog">
-      <!-- Article 01-->
-      <article id="article01" class="article">
-        <!-- título -->
-        <h2 class="article__title">¿Cómo teñir lana de forma super orgánica?</h2>
-        <!-- imagen -->
-        <div class="article__imgContainer">
-          <a href="article/article01.html">
-            <img src="./img/imgs1080x720/6.jpg" alt="tintes" class="article__img">
-          </a>
-        </div>
-        <!-- insignias -->
-        <div class="article__badgeContainer">
-          <span class="badge bg-info article__badge">#5 min lectura</span>
-          <span class="badge bg-warning article__badge">#Silvana Vitali</span>
-        </div>
-        <!-- parrafo -->
-        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor...</p>
-        <!-- botón -->
-        <div>
-          <a href="article/article01.html" class="btn--primary">Leer más</a>
-        </div>
-      </article>
-  
-      <!-- Article 02-->
-      <article id="article02" class="article">
-        <!-- título -->
-        <h2 class="article__title">7 Cosas que debes saber sobre las ovejitas.</h2>
-        <!-- imagen -->
-        <div class="article__imgContainer">
-          <a href="article/article02.html">
-            <img src="./img/imgs1080x720/7.jpg" alt="ovejitas" class="article__img">
-          </a>
-        </div>
-        <!-- insignias -->
-        <div class="article__badgeContainer">
-          <span class="badge bg-info article__badge">#3 min lectura</span>
-              <span class="badge bg-warning article__badge">#Silvana Vitali</span>
-        </div>
-        <!-- parrafo -->
-        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor...</p>
-        <!-- botón -->
-        <div>
-          <a href="article/article02.html" class="btn--primary">Leer más</a>
-        </div>
-      </article>
-  
-      <!-- Article 03-->
-      <article id="article03" class="article">
-        <!-- título -->
-        <h2 class="article__title">5 Tips para que tus ovejitas estén felices.</h2>
-        <!-- imagen -->
-        <div class="article__imgContainer">
-          <a href="article/article03.html">
-            <img src="./img/imgs1080x720/1.jpg" alt="Ovejita feliz" class="article__img">
-          </a>
-        </div>
-        <!-- insignias -->
-        <div class="article__badgeContainer">
-          <span class="badge bg-info article__badge">#7 min lectura</span>
-          <span class="badge bg-warning article__badge">#Silvana Vitali</span>
-        </div>
-        <!-- parrafo -->
-        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor...</p>
-        <!-- botón -->
-        <div>
-          <a href="article/article03.html" class="btn--primary">Leer más</a>
-        </div>
-      </article>
-  
-      <!-- Article 04-->
-      <article id="article01" class="article">
-        <!-- título -->
-        <h2 class="article__title">¿Cómo combinar el color de tus lanas?</h2>
-        <!-- imagen -->
-        <div class="article__imgContainer">
-          <a href="article/article04.html">
-            <img src="./img/imgs1080x720/9.jpg" alt="lanas" class="article__img">
-          </a>
-        </div>
-        <!-- insignias -->
-        <div class="article__badgeContainer">
-          <span class="badge bg-info article__badge">#5 min lectura</span>
-          <span class="badge bg-warning article__badge">#Silvana Vitali</span>
-        </div>
-        <!-- parrafo -->
-        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec urna lorem. Donec pulvinar tempus ante id consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel sem auctor...</p>
-        <!-- botón -->
-        <div>
-          <a href="article/article04.html" class="btn--primary">Leer más</a>
-        </div>
-      </article>
-    </section>
+    <section id="blog" class="blog"></section>
   
     <!-- SIDEBAR -->
     <aside id="sidebar" class="sidebar">
@@ -212,19 +120,28 @@
       </div>
 
       <div class="category">
-        <h3 class="category__title">Categorías</h3>
+        <h3 class="category__title">Por Categorías</h3>
         <ul class="category__list">
           <li>
-            <a href="#">Tejidos</a>
+            <a id="tejidos">Tejidos</a>
           </li>
           <li>
-            <a href="#">Crianza</a>
+            <a id="crianza">Crianza</a>
           </li>
           <li>
             <a href="#">Fieltro</a>
           </li>
           <li>
             <a href="#">Crochet</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3 class="category__title">Por Autor</h3>
+        <ul class="category__list">
+          <li>
+            <a id="silvana">Silvana Vitali</a>
           </li>
         </ul>
       </div>
@@ -297,5 +214,8 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <!-- Mi Javascript -->
+  <script src="js/script.js"></script>
 </body>
 </html>

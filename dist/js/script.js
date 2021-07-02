@@ -1,3 +1,4 @@
+// FUNCIONES
 // Obtener todos los articulos.
 function obtenerArticulos () {
   fetch('./db/db.json')
@@ -165,9 +166,25 @@ function obtenerArticulosPorAutorSilvana() {
 };
 
 
-// obtenerArticulos();
-// obtenerArticulosPorCategoriaTejidos(); 
-// obtenerArticulosPorCategoriaCrianza();
-// obtenerArticulosPorAutorSilvana(); 
+// EVENTOS
+// Activar funcion obtenerArticulosPorCategoriaTejidos al dar un click en 'tejidos'.
+const tejidos_El = document.getElementById('tejidos');
+tejidos.addEventListener('click', () => {
+  obtenerArticulosPorCategoriaTejidos();
+});
+
+// Activar funcion obtenerArticulosPorCategoriaCrianza al dar un click en 'crianza'.
+const crianza_El = document.getElementById('crianza');
+crianza_El.addEventListener('click', () => {
+  obtenerArticulosPorCategoriaCrianza();
+});
+
+// Activar funcion obtenerArticulosPorAutorSilvana al dar un click en 'silvana'.
+const silvana_El = document.getElementById('silvana');
+silvana_El.addEventListener('click', () => {
+  obtenerArticulosPorAutorSilvana(); 
+})
 
 
+// INICIO
+obtenerArticulos();
